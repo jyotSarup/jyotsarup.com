@@ -1,0 +1,85 @@
+.aboutMeWrapper{
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../assets/myHeroBackground.jpg");
+    width:100%;
+    color: white;
+    padding: 1em;
+    justify-content: space-evenly;
+    position: relative;
+    margin: auto;
+
+
+
+
+    // display: flex;
+    // flex-direction: row;
+    // background-image: url("../../assets/myHeroBackground.jpg");
+    // height: 70vh;
+    // color: white;
+    // padding: 3em;
+    // justify-content: space-evenly;
+    // position: relative;
+    // margin: 0;
+
+
+}
+
+.myImg {
+
+    margin: auto;
+    border-radius: 100%;
+    width: 60%;
+    margin-top:1em;
+    // margin: 2em;
+    // margin-bottom:0;
+    // border-radius: 100%;
+    // height: 60%;
+    // width: auto;
+}
+.imgWrapper {
+    position: relative;
+    flex: 0 0 50%;
+    width: 100%;
+    height: auto;
+}
+.bio {
+
+    flex: 0 0 50%;
+    /* margin: "3em"; */
+    text-align: center;
+
+    // flex: 0 0 50%;
+    // /* margin: "3em"; */
+    // padding: 3em;
+    // text-align: left;
+}
+.aboutMeText {
+
+    font-size: 70px;
+    display: inline;
+
+    // font-size: 100px;
+    // display: inline;
+}
+.bioDescription {
+
+    font-size: 20px;
+    font-weight: bold;
+
+    // font-size: 40px;
+    // font-weight: bold;
+}
+.socialMenu {
+    margin:2em;
+    shape-outside: circle(50%);
+    padding-left :0;
+    
+
+    .socialMenuLinks {
+        padding:1em;
+        list-style-type: none;
+        display: inline;
+    }
+}
