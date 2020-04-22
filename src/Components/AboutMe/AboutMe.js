@@ -1,28 +1,35 @@
 import React from "react";
 import heroBackgroundImage from "../../assets/myHeroBackground.jpg";
 import myImage from "../../assets/my-image.png";
+import abstractImageBackground from "../../assets/abstract-image-background.jpg";
+import whiteImageBackground from "../../assets/white-image-background.jpg";
 import myLinkedIn from "../../assets/linkedin.png";
 import myMail from "../../assets/email.png";
 import myGitHub from "../../assets/github.png";
 import "../../App.css";
-import "./styles.scss"
+import "./styles.scss";
 
 function AboutMe() {
     return (
-        <div class="aboutMeWrapper">
-            <div class="bio">
-                <hr width="100%" />
-                <h2 class="aboutMeText">about me</h2>
-
-                <p class="bioDescription">
-                    I'm a vancouver based web and mobile application developer.
-                </p>
-                <hr width="100%" />
-            </div>
-            <div class="imgWrapper">
-                <img class="myImg" src={myImage} />
-                <h2> Jyot Sarup Kaur</h2>
-                <ul class="socialMenu">
+        <div class="wrapper">
+            <div class="aboutMeWrapper">
+                <div class="bio">
+                    <div class="bioText">
+                        <h2 class="aboutMeText">Hi There</h2>
+                    </div>
+                </div>
+                <div class="imgWrapper">
+                    <img class="myImg" src={myImage} />
+                    <img
+                        class="myImgBackground"
+                        src={abstractImageBackground}
+                    />
+                    <img
+                        class="myWhiteImgBackground"
+                        src={whiteImageBackground}
+                    />
+                    {/* <h2> Jyot Sarup Kaur</h2> */}
+                    {/* <ul class="socialMenu">
                     <li class="socialMenuLinks">
                         <a href="#">
                             <span class="icon">
@@ -44,7 +51,16 @@ function AboutMe() {
                             </span>
                         </a>
                     </li>
-                </ul>
+                </ul> */}
+                </div>
+                <div class="bio">
+                    <div class="bioText">
+                        <h2 class="aboutMeText">
+                            I'm <br />
+                            Jyot Sarup{" "}
+                        </h2>
+                    </div>
+                </div>
             </div>
         </div>
     );

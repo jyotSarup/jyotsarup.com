@@ -1,84 +1,127 @@
-.aboutMeWrapper{
-    object-fit: contain;
+body {
+    width: 100%;
+    margin: auto;
+}
+
+.wrapper {
+    height: 100vh;
+}
+.aboutMeWrapper {
     display: flex;
     flex-direction: column;
-    background-image: url("../../assets/myHeroBackground.jpg");
-    width:100%;
-    color: white;
-    padding: 1em;
+    background-color: #ededed;
+    width: 100%;
+    margin: auto;
+    color: rgb(4, 31, 12);
+    padding: 0;
     justify-content: space-evenly;
     position: relative;
     margin: auto;
+    z-index: -9999;
+    @media screen and (min-width: 1000px) {
+        flex-direction: row;
+        height: 100vh;
+        justify-content: space-evenly;
+    }
+}
 
+.bio {
+    flex: 0 0 50%;
+    text-align: center;
+    position: relative;
 
+    @media screen and (min-width: 1000px) {
+        flex: 0 0 33%;
+    }
 
+    .bioText {
+        padding-left: 0;
+    }
+}
+.aboutMeText {
+    font-size: 50px;
+    font-family: "Dancing Script", cursive;
 
-    // display: flex;
-    // flex-direction: row;
-    // background-image: url("../../assets/myHeroBackground.jpg");
-    // height: 70vh;
-    // color: white;
-    // padding: 3em;
-    // justify-content: space-evenly;
-    // position: relative;
-    // margin: 0;
+    @media screen and (min-width: 1000px) {
+        font-size: 50px;
+        display: inline;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.bioDescription {
+    font-size: 15px;
+    font-weight: bold;
 
+    @media screen and (min-width: 1000px) {
+        font-size: 20px;
+    }
+}
 
+.imgWrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    @media screen and (min-width: 1000px) {
+        flex: 0 0 33%;
+        padding: 3em;
+        text-align: left;
+    }
 }
 
 .myImg {
-
     margin: auto;
-    border-radius: 100%;
-    width: 60%;
-    margin-top:1em;
-    // margin: 2em;
-    // margin-bottom:0;
-    // border-radius: 100%;
-    // height: 60%;
-    // width: auto;
+    width: 45%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    @media screen and (min-width: 1000px) {
+        margin-bottom: 0;
+        height: 55%;
+        width: auto;
+    }
 }
-.imgWrapper {
-    position: relative;
-    flex: 0 0 50%;
-    width: 100%;
-    height: auto;
+.myWhiteImgBackground {
+    margin: auto;
+    width: 50%;
+    z-index: -2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    @media screen and (min-width: 1000px) {
+    }
 }
-.bio {
+.myImgBackground {
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 45%;
+    z-index: -1;
+    transform: rotate(-15deg);
 
-    flex: 0 0 50%;
-    /* margin: "3em"; */
-    text-align: center;
+    @media screen and (min-width: 1000px) {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-15deg);
 
-    // flex: 0 0 50%;
-    // /* margin: "3em"; */
-    // padding: 3em;
-    // text-align: left;
+        z-index: -1;
+    }
 }
-.aboutMeText {
 
-    font-size: 70px;
-    display: inline;
-
-    // font-size: 100px;
-    // display: inline;
-}
-.bioDescription {
-
-    font-size: 20px;
-    font-weight: bold;
-
-    // font-size: 40px;
-    // font-weight: bold;
-}
 .socialMenu {
-    margin:2em;
+    margin: 2em;
     shape-outside: circle(50%);
-    padding-left :0;
-    
+    padding-left: 0;
 
     .socialMenuLinks {
-        padding:1em;
+        padding: 1em;
         list-style-type: none;
         display: inline;
     }
