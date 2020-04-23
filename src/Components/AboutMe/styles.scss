@@ -18,7 +18,7 @@ body {
     position: relative;
     margin: auto;
     z-index: -9999;
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 800px) {
         flex-direction: row;
         height: 100vh;
         justify-content: space-evenly;
@@ -30,7 +30,7 @@ body {
     text-align: center;
     position: relative;
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 800px) {
         flex: 0 0 33%;
     }
 
@@ -42,7 +42,7 @@ body {
     font-size: 50px;
     font-family: "Dancing Script", cursive;
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 800px) {
         font-size: 50px;
         display: inline;
         position: absolute;
@@ -55,7 +55,7 @@ body {
     font-size: 15px;
     font-weight: bold;
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 800px) {
         font-size: 20px;
     }
 }
@@ -64,7 +64,7 @@ body {
     position: relative;
     width: 100%;
     height: auto;
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 800px) {
         flex: 0 0 33%;
         padding: 3em;
         text-align: left;
@@ -80,7 +80,7 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 800px) {
         margin-bottom: 0;
         height: 55%;
         width: auto;
@@ -95,7 +95,7 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 800px) {
     }
 }
 .myImgBackground {
@@ -105,7 +105,7 @@ body {
     z-index: -1;
     transform: rotate(-15deg);
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 800px) {
         position: absolute;
         left: 50%;
         top: 50%;

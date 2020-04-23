@@ -1,15 +1,3 @@
-import React from 'react'
-import { Switch, Route } from 'react-router-dom'
+import Nav from './Nav.js'
 
-function index() {
-  return (
-    <div>
-      <nav>
-        
-      </nav>
-      
-    </div>
-  )
-}
-
-export default index
+export default Nav

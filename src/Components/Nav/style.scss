@@ -1,0 +1,40 @@
+.burgerIcon {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+  border-radius: 2px;
+}
+
+.navWrapper{
+  width:40%;
+  float: left;
+  position: absolute;
+  background-color: rgb(219, 205, 219);
+  height:100vh;
+}
+.navList{
+  list-style-type: none;
+  padding-left: 5px;
+}
+
+.navListItem{
+  text-align: left; 
+  padding:0.5em;
+}
+
+.navListItemLink{
+  font-weight: bold;
+  text-align: left;
+  text-decoration: none;
+  color: rgb(4, 31, 12);
+}
+.navListItem a:hover{ 
+  color: rgb(219, 4, 86);
+}
