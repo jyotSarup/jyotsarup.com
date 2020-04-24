@@ -6,16 +6,25 @@ import whiteImageBackground from "../../assets/white-image-background.jpg";
 import myLinkedIn from "../../assets/linkedin.png";
 import myMail from "../../assets/email.png";
 import myGitHub from "../../assets/github.png";
+import downArrow from "../../assets/down-arrow.png"
 import "../../App.css";
 import "./styles.scss";
+import { useMediaQuery } from "react-responsive";
 
 function AboutMe() {
+    const isDesktopOrLaptop = useMediaQuery({
+        query: "(min-device-width: 1000px)",
+    });
+
+    const isTabletOrMobile = useMediaQuery({ query: "(max-width: 800px)" });
+
     return (
         <div className="wrapper">
             <div className="aboutMeWrapper">
                 <div className="bio">
                     <div className="bioText">
-                        <h2 className="aboutMeText">Hi There</h2>
+                        <h2 className="aboutMeText">Hi There! <br />I'm 
+                            Jyot Sarup{" "}</h2>
                     </div>
                 </div>
                 <div className="imgWrapper">
@@ -56,14 +65,15 @@ function AboutMe() {
                 <div className="bio">
                     <div className="bioText">
                         <h2 className="aboutMeText">
-                            I'm <br />
-                            Jyot Sarup{" "}
+                            Full-Stack Developer
                         </h2>
                     </div>
                 </div>
                 
             </div>
-            
+            {!isTabletOrMobile && (<div className="arrow bounce">
+                    <a class="fa fa-arrow-down fa-2x" href="#"><img src={downArrow}/></a>
+                </div>)}
         </div>
     );
 }
