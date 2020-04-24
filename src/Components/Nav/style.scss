@@ -1,6 +1,9 @@
 .burgerIcon {
-  display: inline-block;
+  // display: inline-block;
   cursor: pointer;
+  padding: 5px 0 0 5px;;
+  position: absolute;
+  z-index:5;
 }
 
 .bar1, .bar2, .bar3 {
@@ -12,16 +15,50 @@
   border-radius: 2px;
 }
 
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
 .navWrapper{
   width:40%;
+  min-width:100px;
+  z-index: 3;
   float: left;
   position: absolute;
   background-color: rgb(219, 205, 219);
-  height:100vh;
+  height:100%;
+  // display: none;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-out ;
+  &.enterFromLeft {
+    box-shadow: 1px 0 6px rgba(0,0,0,0.3) ;
+    transform: translateX(0);
+  }
+
+  @media screen and (min-width : 800px){
+    display: none;
+  }
+}
+
+.backdrop {
+  z-index: 2;
+  position: absolute;
+  opacity: 50%;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
 }
 .navList{
   list-style-type: none;
-  padding-left: 5px;
+  padding: 40% 0 0 5px;
 }
 
 .navListItem{
@@ -38,3 +75,4 @@
 .navListItem a:hover{ 
   color: rgb(219, 4, 86);
 }
+

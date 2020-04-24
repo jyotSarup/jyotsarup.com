@@ -4,7 +4,7 @@ body {
 }
 
 .wrapper {
-    height: 100vh;
+    height: 100%;
 }
 .aboutMeWrapper {
     display: flex;
@@ -18,6 +18,7 @@ body {
     position: relative;
     margin: auto;
     z-index: -9999;
+    height:100%;
     @media screen and (min-width: 800px) {
         flex-direction: row;
         height: 100vh;
@@ -126,3 +127,6 @@ body {
         display: inline;
     }
 }
+
+
+

@@ -11,21 +11,21 @@ import "./styles.scss";
 
 function AboutMe() {
     return (
-        <div class="wrapper">
-            <div class="aboutMeWrapper">
-                <div class="bio">
-                    <div class="bioText">
-                        <h2 class="aboutMeText">Hi There</h2>
+        <div className="wrapper">
+            <div className="aboutMeWrapper">
+                <div className="bio">
+                    <div className="bioText">
+                        <h2 className="aboutMeText">Hi There</h2>
                     </div>
                 </div>
-                <div class="imgWrapper">
-                    <img class="myImg" src={myImage} />
+                <div className="imgWrapper">
+                    <img className="myImg" src={myImage} />
                     <img
-                        class="myImgBackground"
+                        className="myImgBackground"
                         src={abstractImageBackground}
                     />
                     <img
-                        class="myWhiteImgBackground"
+                        className="myWhiteImgBackground"
                         src={whiteImageBackground}
                     />
                     {/* <h2> Jyot Sarup Kaur</h2> */}
@@ -53,15 +53,17 @@ function AboutMe() {
                     </li>
                 </ul> */}
                 </div>
-                <div class="bio">
-                    <div class="bioText">
-                        <h2 class="aboutMeText">
+                <div className="bio">
+                    <div className="bioText">
+                        <h2 className="aboutMeText">
                             I'm <br />
                             Jyot Sarup{" "}
                         </h2>
                     </div>
                 </div>
+                
             </div>
+            
         </div>
     );
 }
