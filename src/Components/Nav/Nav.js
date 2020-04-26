@@ -39,7 +39,7 @@ function Nav() {
     };
 
     return (
-        <div class="NavOuterDiv">
+        <div className="NavOuterDiv">
             {isTabletOrMobile && !isBurgerIcon && (
                 <div className="backdrop"></div>
             )}
