@@ -5,6 +5,7 @@ import "./projects.scss";
 import { Link } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
 
+
 function ProjectDetails(props) {
  
   const screenshotImages = require.context('../../assets', true);
@@ -22,6 +23,10 @@ function ProjectDetails(props) {
             <h1 className="projectHeading">{props.projects.heading}</h1>
             <h3 className="ProjectSubHeading">{props.projects.subHeading}</h3>
             <p className="projectDescription">{props.projects.description}</p>
+          </div>
+          <div className="actionButtons">
+              <a href={props.projects.projectLink}>View Website</a>
+              <a href={props.projects.gitHub}>View on Github</a>
           </div>
         </div>
     </div>

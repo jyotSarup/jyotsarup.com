@@ -12,6 +12,8 @@ function App() {
         <BrowserRouter>
             <div className="App">
                 <Nav />
+                <AboutMe/>
+                <Projects/>
                 <Switch>
                   <Route path="/" exact component={AboutMe}/>
                   <Route path="/projects" exact component={Projects}/>

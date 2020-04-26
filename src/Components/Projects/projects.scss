@@ -1,16 +1,15 @@
-body{
-  box-sizing: border-box;
-}
+
 
 .ProjectsWrapper {
   width:100%;
   height:100%;
-;}
-
+  position: relative;  
+  // margin-top:5%;
+}
 .projectDetailsWrapper{
   // padding: "2em";
   width:100%;
-  height: 100vh;
+  height: 100%;
   color:white;
   display: flex;
   flex-direction: column;
@@ -26,6 +25,9 @@ body{
   border-radius: 5px;
   box-shadow: 1px 0 6px rgba(0,0,0,0.3) ;
   padding:0;
+  @media screen and (min-width : 800px){
+    width:50%;
+  }
 }
 
 .screenshots{
@@ -40,4 +42,28 @@ body{
 
 .DescriptionWrapper{
   padding: 0.5em 2em ;
+  @media screen and (min-width : 800px){
+    width:60%;
+    margin: auto;
+  }
+}
+
+.actionButtons{
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  padding:10%;
+  @media screen and (min-width : 800px){
+    width:30%;
+    margin: auto;
+  }
+  
+}
+.actionButtons a{
+  padding:1em;
+  background-color: #333;
+  color:white;
+  // display: block;
+  width: 40%;
+  border-radius: 5px;
 }
