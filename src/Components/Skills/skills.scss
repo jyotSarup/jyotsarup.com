@@ -14,13 +14,13 @@
 .tools{
   margin:auto;
   // height: 15%;
-  width:100%;
+  // width:100%;
   display: grid;
 
   grid-template-columns: 1fr 1fr;
   grid-gap:1em;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  // justify-content: space-evenly;
   padding:1em;
   
   @media screen and (min-width: 800px){
@@ -30,12 +30,12 @@
 }
 
 .tools.rightSide{
-  justify-items: flex-end;
+  // justify-items: flex-end;
   flex-direction: row-reverse;
 }
 
 .tools.leftSide{
-  justify-items: flex-start;
+  // justify-items: flex-start;
   flex-direction: row;
 }
 
