@@ -11,20 +11,24 @@ function Projects() {
       subHeading:"Business Management Tool for Realtor",
       techStack:"React + ChartJS + NestJS + TypeScript + Nodejs",
       description:"Developed in a team of developers and designers and presented as a final project in Term 3. Easy Realty System is a business managemen tool for small to medium size realtor companies. Using this, they can manage their realtors, listings. The system also offers a dashboard where the user can see statistics of past sales of the realtors.",
-      bgColor:"rgba(32, 183, 134, 0.9)" ,
+      // bgColor:"#c3c0c0" ,
+      bgColor:"linear-gradient(#efeaea,#c3c0c0, #9e9e9e)",
       screenshots:["easyRealtySystem_screenshots.png"],
       gitHub:"https://github.com/jyotSarup/easy-realty-system-dashboard",
-      projectLink:"http://easyrealtysystem.wmdd.ca/"
+      projectLink:"http://easyrealtysystem.wmdd.ca/",
+      // isLastProject:false
     },
     {
       heading:"Dishlist",
       subHeading:"Hybrid Mobile Application",
       techStack:"Apache Cordova + Vue + Quasar + HTML + Sass",
       description:"Developed in a team of developers and designers and presented as a final project in Term 2. Dishlist is a digital menu which serves as a solution to restaurants. Being in a city with restaurants having food from different nationalities, customers find it tough to understand the menu. Dishlist mobile application makes it wast by providing detailed description of the menu items and ingredients with some real pictures and reviews uploaded by other customers",
-      bgColor:"rgba(255, 102, 77, 0.9)",
+      // bgColor:"#9e9e9e",
+      bgColor:"linear-gradient(#efeaea,#c3c0c0, #9e9e9e)",
       screenshots:["dishlist_scan_qr.png","dishlist_dish_photos.png", "dishlist_menu.png"],
       gitHub:"https://github.com/jyotSarup/dishlist-hybrid-mobile",
-      projectLink:"http://dishlist.wmdd.ca/"
+      projectLink:"http://dishlist.wmdd.ca/",
+      // isLastProject:true
     }
 
   ]

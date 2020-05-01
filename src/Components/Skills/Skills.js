@@ -28,8 +28,8 @@ function Skills() {
     }, []);
 
     return (
-        <div class="skillsOuterDiv">
-            <h2>Skills</h2>
+        <div className="skillsOuterDiv">
+            <h2>Technologies I have worked on</h2>
             <div className="skillsWrapper">
                 <div className="client-side tools leftSide">
                     <h2 className="toolsHeading">Client-Side</h2>

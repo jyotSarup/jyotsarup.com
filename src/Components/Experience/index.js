@@ -1,3 +1,3 @@
-import Experience from './Experience.js'
+import ExperienceContainer from './ExperienceContainer'
 
-export default Experience
+export default ExperienceContainer

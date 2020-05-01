@@ -21,14 +21,16 @@ function AboutMe() {
     return (
         <div className="wrapper">
             <div className="aboutMeWrapper">
-                <div className="bio">
-                    <div className="bioText">
-                        <h2 className="aboutMeText">Hi There! <br />I'm 
-                            Jyot Sarup{" "}</h2>
-                    </div>
-                </div>
+                
                 <div className="imgWrapper">
+                    {!isTabletOrMobile && (<div className="purpleDiv">
+
+                    </div>)}
+                    {!isTabletOrMobile && (<div className="blueDiv">
+                    
+                    </div>)}
                     <img className="myImg" src={myImage} />
+                    {/* 
                     <img
                         className="myImgBackground"
                         src={abstractImageBackground}
@@ -36,7 +38,7 @@ function AboutMe() {
                     <img
                         className="myWhiteImgBackground"
                         src={whiteImageBackground}
-                    />
+                    /> */}
                     {/* <h2> Jyot Sarup Kaur</h2> */}
                     {/* <ul class="socialMenu">
                     <li class="socialMenuLinks">
@@ -64,11 +66,19 @@ function AboutMe() {
                 </div>
                 <div className="bio">
                     <div className="bioText">
+                        <h2 className="aboutMeText">Hi There! <br /> I'm <span style={{color:"#07072b"}}>Jyot Sarup</span> </h2>
+                        <h2 className="aboutMeText">
+                            I'm a <span style={{color:"#07072b"}}>Full-Stack Developer</span>
+                        </h2>
+                    </div>
+                </div>
+                {/* <div className="bio">
+                    <div className="bioText">
                         <h2 className="aboutMeText">
                             Full-Stack Developer
                         </h2>
                     </div>
-                </div>
+                </div> */}
                 
             </div>
             {!isTabletOrMobile && (<div className="arrow bounce">

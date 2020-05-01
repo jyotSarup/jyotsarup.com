@@ -5,6 +5,7 @@
   padding: 5px 0 0 5px;;
   position: absolute;
   z-index:5;
+  position: fixed;
 }
 
 .bar1, .bar2, .bar3 {
@@ -42,8 +43,9 @@
   min-width:100px;
   z-index: 3;
   float: left;
-  position: absolute;
+  position: fixed;
   background-color: rgb(219, 205, 219);
+  // background: transparent;
   height:100%;
   // display: none;
   transform: translateX(-100%);
@@ -54,12 +56,16 @@
   }
 
   @media screen and (min-width : 800px){
+    
     transform: translateX(0);
     transition:none;
-    background-color:  #ededed;;
+    // background-color:  #ededed;;
+    background: transparent;
     position: fixed;
-    height: 5%;
+    float: none;
+    // height: 5%;
     width:100%;
+    height:auto;
     box-shadow: none ;
   }
 }
@@ -74,16 +80,19 @@
     flex-direction: row;
     align-items: flex-end;;
     padding: 0 5% 0 0;
+    padding-top:15px;
     justify-content: flex-end;
       box-sizing: border-box;
-      height:100%;
+      margin-top: 0;
+      // height:100%;
       width:100%;
       position: fixed;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.3) ;
-      background-color:  #ededed;
+      // box-shadow: 0 4px 6px rgba(0,0,0,0.3) ;
+      // background-color:  #ededed;
+      background: transparent;
       z-index: 8888;
-      
-
+      // background-color: rgb(4, 31, 12)  ;
+    // background-color: white;
     }
   
 }
@@ -101,9 +110,21 @@
   font-weight: bold;
   text-align: left;
   text-decoration: none;
-  color: rgb(4, 31, 12);
+  color:#07072b;
+  @media screen and (min-width : 800px){
+    color:#07072b;
+  
+  }
+
 }
 .navListItem a:hover{ 
-  color: rgb(3, 139, 60);
+  color:#9e9e9e;
+  cursor: pointer;;
+  
+  // color: rgb(3, 139, 60);
+}
+
+.navListItem:hover{
+  transform: scale(1.1);
 }
 

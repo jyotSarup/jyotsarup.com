@@ -1,21 +1,25 @@
 body {
+
     width: 100%;
     margin: auto;
-    background-color: #ededed;
+    background-color: white;
+    // background-color: #f8f0ec;
+    //#fbf3ee
 }
 
 .wrapper {
-    height: 100vh;
+    padding-top:2em;
+    height: 105vh;
     
     
 }
 .aboutMeWrapper {
     display: flex;
     flex-direction: column;
-    background-color: #ededed;
+    // background-color: #f8f0ec;
     width: 100%;
     margin: auto;
-    color: rgb(4, 31, 12);
+    color: #9e9e9e;
     padding: 0;
     justify-content: space-evenly;
     position: relative;
@@ -33,9 +37,9 @@ body {
     padding-bottom: 0;
     text-align: center;
     position: relative;
-
+    margin:auto;
     @media screen and (min-width: 800px) {
-        flex: 0 0 33%;
+        // flex: 0 0 33%;
     }
 
     .bioText {
@@ -45,14 +49,15 @@ body {
 .aboutMeText {
     font-size: 50px;
     font-family: "Dancing Script", cursive;
-
+    // margin:auto;
+    padding-bottom: 0.5em;
     @media screen and (min-width: 800px) {
         font-size: 50px;
-        display: inline;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        // display: inline;
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
     }
 }
 .bioDescription {
@@ -68,9 +73,11 @@ body {
     position: relative;
     width: 100%;
     height: auto;
+    margin-top:2em;
+    
     @media screen and (min-width: 800px) {
         flex: 0 0 33%;
-        padding: 3em;
+        padding: 2em;
         text-align: left;
     }
 }
@@ -79,62 +86,95 @@ body {
     margin: auto;
     width: 45%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    
     z-index: 10;
+    border-radius: 10%;
     @media screen and (min-width: 800px) {
         margin-bottom: 0;
         height: 65%;
         width: auto;
-    }
-}
-.myWhiteImgBackground {
-    margin: auto;
-    width: 50%;
-    z-index: -2;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    position: absolute;
+        position: absolute;
+        border-radius: 0;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    @media screen and (min-width: 800px) {
-    }
-}
-.myImgBackground {
-    margin: auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 45%;
-    z-index: -1;
-    transform: rotate(-15deg);
-
-    @media screen and (min-width: 800px) {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%) rotate(-15deg);
-
-        z-index: -1;
     }
 }
 
-.socialMenu {
-    margin: 2em;
-    shape-outside: circle(50%);
-    padding-left: 0;
-
-    .socialMenuLinks {
-        padding: 1em;
-        list-style-type: none;
-        display: inline;
-    }
+.purpleDiv{
+    position: relative;
+    width:70%;
+    border:1px solid #000024;
+    // background: #000024;
+    left:-30%;
+    float:right;
+    // opacity:50%;
+    top:-5%;
+    height:110%;
+    // z-index
+    // clip-path: polygon(1% 0%, 49% 0%, 50% 45%, 99% 46%, 100% 100%, 0% 100%);
 }
 
+.blueDiv{
+        position: relative;
+        // border:1px solid #000024;
+        background: #c3c0c0;
+        width:70%;
+        top:5%;
+        opacity:70%;
+        height:90%;
+        // top:-100%;
+        left:30%;
+        z-index:-100;
+    
+}
+// .myWhiteImgBackground {
+//     margin: auto;
+//     width: 50%;
+//     z-index: -2;
+//     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+//     position: absolute;
+//     left: 50%;
+//     top: 50%;
+//     transform: translate(-50%, -50%);
+//     @media screen and (min-width: 800px) {
+//     }
+// }
+// .myImgBackground {
+//     margin: auto;
+//     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+//     width: 45%;
+//     z-index: -1;
+//     transform: rotate(-15deg);
+
+//     @media screen and (min-width: 800px) {
+//         position: absolute;
+//         left: 50%;
+//         top: 50%;
+//         transform: translate(-50%, -50%) rotate(-15deg);
+
+//         z-index: -1;
+//     }
+// }
+
+// .socialMenu {
+//     margin: 2em;
+//     shape-outside: circle(50%);
+//     padding-left: 0;
+
+//     .socialMenuLinks {
+//         padding: 1em;
+//         list-style-type: none;
+//         display: inline;
+//     }
+// }
 
 
-a { color: black; text-decoration: none;
-    margin-top: 4px; }
+
+a { color: #07072b; text-decoration: none;
+    // background-color: #9e9e9e;
+    // border-radius: 50%;
+    margin-top: 2px; }
  a img{
      width:5%;
      height:Auto;
@@ -146,7 +186,7 @@ a { color: black; text-decoration: none;
 .arrow {
   text-align: center;
 //   margin: 8% 0;
-//   background-color: #ededed;
+//   background-color: #fcf8f8;
 }
 .bounce {
   -moz-animation: bounce 2s infinite;

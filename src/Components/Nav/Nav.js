@@ -2,8 +2,25 @@ import React, { useState, useRef, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 import "../../App.css";
 import "./style.scss";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
+// import {animateScroll as scroll,Link} from "react-scroll"
+// import * as Scroll from "react-scroll";
+import {
+    Link,
+    Element,
+    Events,
+    animateScroll as scroll,
+    scrollSpy,
+    scroller,
+} from "react-scroll";
+
+// Or Access Link,Element,etc as follows
+// let Link = Scroll.Link;
+// let Element = Scroll.Element;
+// let Events = Scroll.Events;
+// let scroll = Scroll.animateScroll;
+// let scrollSpy = Scroll.scrollSpy;
 
 function Nav() {
     const [isBurgerIcon, setisBurgerIcon] = useState(true);
@@ -11,7 +28,7 @@ function Nav() {
     const [burgerIconClass, setBurgerIconClass] = useState("burgerIcon");
 
     const [navDrawerClass, setnavDrawerClass] = useState("navWrapper");
-    
+
     const isDesktopOrLaptop = useMediaQuery({
         query: "(min-device-width: 1000px)",
     });
@@ -23,8 +40,6 @@ function Nav() {
     //     setisBurgerIcon(true);
     //     setnavDrawerClass("navWrapper");
     // }
-
-    
 
     const toggleBurgerIcon = (e) => {
         if (isBurgerIcon) {
@@ -62,27 +77,53 @@ function Nav() {
                     <nav>
                         <ul className="navList">
                             <li className="navListItem">
-                                <Link className="navListItemLink" to="/">
+                                <Link
+                                    onClick={toggleBurgerIcon}
+                                    className="navListItemLink"
+                                    to="aboutMe"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={25}
+                                    duration={1000}
+                                >
                                     Home
                                 </Link>
                             </li>
                             <li className="navListItem">
-                                <Link className="navListItemLink" to="/skills">
+                                <Link
+                                    onClick={toggleBurgerIcon}
+                                    className="navListItemLink"
+                                    to="experience"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={50}
+                                    duration={500}
+                                >
+                                    Work History
+                                </Link>
+                            </li>
+                            <li className="navListItem">
+                                <Link
+                                    onClick={toggleBurgerIcon}
+                                    className="navListItemLink"
+                                    to="skills"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={50}
+                                    duration={500}
+                                >
                                     Skills
                                 </Link>
                             </li>
                             <li className="navListItem">
                                 <Link
+                                    onClick={toggleBurgerIcon}
                                     className="navListItemLink"
-                                    to="/experience"
-                                >
-                                    Experience
-                                </Link>
-                            </li>
-                            <li className="navListItem">
-                                <Link
-                                    className="navListItemLink"
-                                    to="/projects"
+                                    to="projects"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={50}
+                                    duration={500}
                                 >
                                     Projects
                                 </Link>
