@@ -1,3 +1,4 @@
+@import '../../scss_variables/variables';
 .ExpWrapper{
   // background: linear-gradient(#efeaea,#c3c0c0, #9e9e9e);
   margin:auto;
@@ -52,7 +53,7 @@ button{
   width:150px;
   padding:5px;
   margin: 2px auto 2px auto;
-  background-color: #07072b;
+  background-color:$action_clr;
   color:white;
   // display: block;
   // width: 40%;

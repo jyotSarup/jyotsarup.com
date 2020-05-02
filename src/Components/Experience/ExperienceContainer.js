@@ -43,7 +43,7 @@ function ExperienceContainer() {
     return (
         <div
             style={{
-                background: "linear-gradient(#efeaea,#c3c0c0, #9e9e9e)",
+                background: "linear-gradient(rgb(219, 241, 195), rgb(170, 189, 208), rgb(131, 172, 143))",
                 padding: "2em",
             }}
         >

@@ -1,4 +1,4 @@
-
+@import '../../scss_variables/variables';
 .burgerIcon {
   // display: inline-block;
   cursor: pointer;
@@ -110,15 +110,11 @@
   font-weight: bold;
   text-align: left;
   text-decoration: none;
-  color:#07072b;
-  @media screen and (min-width : 800px){
-    color:#07072b;
-  
-  }
+  color:$action_clr;
 
 }
 .navListItem a:hover{ 
-  color:#9e9e9e;
+  color:$primary_clr;
   cursor: pointer;;
   
   // color: rgb(3, 139, 60);

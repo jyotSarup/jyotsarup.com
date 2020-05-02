@@ -1,3 +1,5 @@
+@import "../../scss_variables/variables";
+
 body {
     width: 100%;
     margin: auto;
@@ -7,17 +9,16 @@ body {
 .wrapper {
     padding-top: 2em;
     height: 105vh;
-    
 }
 .aboutMeWrapper {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: auto;
-    
-    color: #9e9e9e;
+
+    color: $primary_clr;
     padding: 0;
-    padding-top:2em;
+    padding-top: 2em;
     justify-content: space-evenly;
     position: relative;
     margin: auto;
@@ -26,7 +27,7 @@ body {
     @media screen and (min-width: 800px) {
         flex-direction: row;
         height: 80%;
-        padding:0;
+        padding: 0;
         justify-content: space-evenly;
     }
 }
@@ -36,14 +37,12 @@ body {
     text-align: center;
     position: relative;
     margin: auto;
-    margin-top:1em;
-    @media screen and (min-width:800px){
+    margin-top: 1em;
+    @media screen and (min-width: 800px) {
         margin: auto;
-        
     }
     .bioText {
         padding-left: 0;
-       
     }
 }
 .aboutMeText {
@@ -68,11 +67,12 @@ body {
     width: 100%;
     height: auto;
     margin-top: 2em;
-
     @media screen and (min-width: 800px) {
         flex: 0 0 33%;
         padding: 2em;
         text-align: left;
+
+        margin-left: 3em;
     }
 }
 
@@ -98,7 +98,7 @@ body {
 .purpleDiv {
     position: relative;
     width: 70%;
-    border: 1px solid #000024;
+    border: 1px solid $action_clr;
     left: -30%;
     float: right;
     top: -5%;
@@ -107,7 +107,7 @@ body {
 
 .blueDiv {
     position: relative;
-    background: #c3c0c0;
+    background: $primary_clr;
     width: 70%;
     top: 5%;
     opacity: 70%;
@@ -117,10 +117,10 @@ body {
 }
 
 .arrowLink {
-    color: #07072b;
+    color: $action_clr;
     text-decoration: none;
     margin-top: 1px;
-    background: #9e9e9e;
+    // background: $primary_clr;
 }
 .arrowLink img {
     width: 5%;
@@ -128,7 +128,7 @@ body {
 }
 .arrow {
     text-align: center;
-    &:hover{
+    &:hover {
         cursor: pointer;
     }
 }
