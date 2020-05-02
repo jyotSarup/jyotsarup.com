@@ -1,7 +1,27 @@
 import React from 'react'
+import Button from '@material-ui/core/Button';
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+import { useTheme } from '@material-ui/core/styles';
+
 
 function Experience(props) {
+
+  const [open, setOpen] = React.useState(false);
+  const theme = useTheme();
+  const fullScreen = useMediaQuery(theme.breakpoints.down('sm'));
   
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
   return (
     
 
@@ -12,7 +32,27 @@ function Experience(props) {
       <h3 style={{marginBottom:"-8px"}}>{props.experience.position}</h3>
       <h3 style={{margin:"-8px"}}>{props.experience.timeServed}</h3>
       <h4 style={{margin:"0"}}>{props.experience.dates}</h4>
-      <p>{props.experience.workDone}</p>
+      <button onClick={handleClickOpen}>Learn More..</button>
+
+      <Dialog
+        fullScreen={fullScreen}
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="responsive-dialog-title"
+      >
+        <DialogTitle id="responsive-dialog-title">{props.experience.company} - {props.experience.position}</DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+            {props.experience.workDone.map((work=> <p>{work}</p>))}
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <button autoFocus onClick={handleClose} >
+            Close
+          </button>
+          
+        </DialogActions>
+      </Dialog>
     </div>
   )
 }

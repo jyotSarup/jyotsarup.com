@@ -75,6 +75,11 @@ function Skills() {
                         className="logoImages"
                         src={logoImages(`./nodejs-logo.png`)}
                     />
+
+<img
+                        className="logoImages"
+                        src={logoImages(`./ssis-logo.png`)}
+                    />
                     
                     
                 </div>
@@ -87,7 +92,9 @@ function Skills() {
                 />
                 </div>
                 <div id="division3" className="division fromLeft"></div>
-                <div className="other tools rightSide"></div>
+                <div className="other tools rightSide">
+                  
+                </div>
             </div>
         </div>
     );

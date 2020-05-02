@@ -7,12 +7,7 @@ import { CSSTransition } from "react-transition-group";
 // import {animateScroll as scroll,Link} from "react-scroll"
 // import * as Scroll from "react-scroll";
 import {
-    Link,
-    Element,
-    Events,
-    animateScroll as scroll,
-    scrollSpy,
-    scroller,
+    Link
 } from "react-scroll";
 
 // Or Access Link,Element,etc as follows

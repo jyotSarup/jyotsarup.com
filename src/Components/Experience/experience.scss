@@ -48,4 +48,18 @@
 
 }
 
+button{
+  width:150px;
+  padding:5px;
+  margin: 2px auto 2px auto;
+  background-color: #07072b;
+  color:white;
+  // display: block;
+  // width: 40%;
+  border-radius: 5px;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
 
