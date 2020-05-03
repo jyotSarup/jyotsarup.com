@@ -5,6 +5,7 @@ import "./experience.scss";
 function ExperienceContainer() {
     const workExp = [
         {
+            id:1,
             position: "System Engineer",
             timeServed: "3+ years",
             dates: "Sep 21,2015 - Jan 25,2019",
@@ -30,6 +31,7 @@ function ExperienceContainer() {
           ],
         },
         {
+            id:2, 
             position: "Intern",
             timeServed: "6 months",
             dates: "Jun 1,2014 - Dec 1,2014",
@@ -43,7 +45,7 @@ function ExperienceContainer() {
     return (
         <div
             style={{
-                background: "linear-gradient(rgb(219, 241, 195), rgb(170, 189, 208), rgb(131, 172, 143))",
+                background: "linear-gradient(rgb(203, 218, 187), rgb(170, 189, 208), rgb(107, 119, 98))",
                 padding: "2em",
             }}
         >
@@ -64,7 +66,7 @@ function ExperienceContainer() {
             </div>
             <div className="ExpWrapper">
                 {workExp.map((exp) => (
-                    <Experience experience={exp} />
+                    <Experience key={exp.id} experience={exp} />
                 ))}
             </div>
         </div>

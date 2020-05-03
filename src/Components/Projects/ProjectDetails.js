@@ -14,7 +14,7 @@ function ProjectDetails(props) {
         <h1 style={{color:"#07072b"}}className="projectHeading">{props.projects.heading}</h1>
           <div className="screenShotsWrapper">
             <div className="screenshots" >
-              {screenshots.map(screenshot => <img className="screenshotImg" style={{maxWidth:`${(100/screenshots.length)-4}%`}} src={screenshotImages(`./${screenshot}`)}/>)}
+              {screenshots.map((screenshot,index) => <img key={`screenshot${index}`} className="screenshotImg" style={{maxWidth:`${(100/screenshots.length)-4}%`}} src={screenshotImages(`./${screenshot}`)}/>)}
             </div>
           </div>
           <div className="DescriptionWrapper">

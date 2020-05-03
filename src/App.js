@@ -5,8 +5,10 @@ import Nav from "./Components/Nav";
 import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
 import Experience from "./Components/Experience";
+import ContactMe from "./Components/ContactMe"
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { Element } from "react-scroll";
+// import ContactMe from "./Components/ContactMe";
 function App() {
     return (
         <BrowserRouter>
@@ -24,15 +26,9 @@ function App() {
                 <Element id="projects" name="projects">
                     <Projects />
                 </Element>
-                
-                
-
-                {/* <Switch>
-                  <Route path="/" exact component={AboutMe}/>
-                  <Route path="/projects" exact component={Projects}/>
-                  <Route path="/skills" exact component={Skills}/>
-                  <Route path="/experience" exact component={Experience}/>
-                </Switch> */}
+                <Element id="contactMe" name="contactMe">
+                    <ContactMe />
+                </Element>
             </div>
         </BrowserRouter>
     );

@@ -40,10 +40,10 @@ function Experience(props) {
         onClose={handleClose}
         aria-labelledby="responsive-dialog-title"
       >
-        <DialogTitle id="responsive-dialog-title">{props.experience.company} - {props.experience.position}</DialogTitle>
+        <DialogTitle style={{color:"#050642", paddingBottom:"0"}} id="responsive-dialog-title">{props.experience.company} - {props.experience.position}</DialogTitle>
         <DialogContent>
-          <DialogContentText>
-            {props.experience.workDone.map((work=> <p>{work}</p>))}
+          <DialogContentText style={{color:"black"}}>
+            {props.experience.workDone.map(((work,index)=> <p key={`work${index}`}>{work}</p>))}
           </DialogContentText>
         </DialogContent>
         <DialogActions>
