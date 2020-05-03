@@ -65,7 +65,6 @@ function Nav() {
                                     to="experience"
                                     spy={true}
                                     smooth={true}
-                                    offset={50}
                                     duration={500}
                                 >
                                     Work History
@@ -78,7 +77,6 @@ function Nav() {
                                     to="skills"
                                     spy={true}
                                     smooth={true}
-                                    offset={50}
                                     duration={500}
                                 >
                                     Skills
@@ -91,7 +89,6 @@ function Nav() {
                                     to="projects"
                                     spy={true}
                                     smooth={true}
-                                    offset={50}
                                     duration={500}
                                 >
                                     Projects
@@ -104,7 +101,6 @@ function Nav() {
                                     to="contactMe"
                                     spy={true}
                                     smooth={true}
-                                    offset={50}
                                     duration={500}
                                 >
                                     Contact Me
@@ -114,8 +110,6 @@ function Nav() {
                     </nav>
                 </header>
             </div>
-            {/* // </CSSTransition> */}
-            {/* )} */}
         </div>
     );
 }

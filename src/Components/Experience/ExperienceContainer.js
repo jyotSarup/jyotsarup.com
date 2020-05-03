@@ -57,12 +57,9 @@ function ExperienceContainer() {
                 a globally known firm. The experience of working direcly with
                 clients for more than three years helped me grow from a fresh
                 graduate to an IT professional. New trends and technologies in
-                this industry tempted me to get back into school and learn more.
-                Currently, I am a Web and Mobile Application Development student
-                at Langara College, Vancouver. This course is not only
-                professional, but, it also keeps me updated with trending
-                technologies. Can not wait to join a new team and get back to
-                work this september.
+                this industry tempted me to get back into school and I did my post-degree diploma
+                in web and mobile application development. Currently I am looking for full-time 
+                Software Engineer opportunities and I can not wait to get back to work this september :)
             </div>
             <div className="ExpWrapper">
                 {workExp.map((exp) => (

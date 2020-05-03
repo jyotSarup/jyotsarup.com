@@ -43,7 +43,6 @@ function AboutMe() {
                         to="experience"
                         spy={true}
                         smooth={true}
-                        offset={50}
                         duration={500}
                     >
                         <img src={downArrow} />

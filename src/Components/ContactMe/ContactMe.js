@@ -1,7 +1,11 @@
 import React from "react";
 import "../../App.css";
 import "./contactMe.scss";
-import { Button, TextField } from "@material-ui/core";
+import TextField from "@material-ui/core/TextField";
+import gitHubLogo from "../../assets/github.png";
+import linkedInLogo from "../../assets/linkedin.png";
+import emailLogo from "../../assets/email.png";
+
 function ContactMe() {
     return (
         <div className="contactMeWrapper">
@@ -33,6 +37,7 @@ function ContactMe() {
                     <h4>Contact for Project</h4>
                 </div>
             </div>
+            <div style={{position:"relative"}}>
             <div className="formWrapper">
                 <TextField
                     className="formInput name"
@@ -67,6 +72,42 @@ function ContactMe() {
                 />
 
                 <button className="actionButton"> Send</button>
+            </div>
+
+            <div className="ContactMeHere">
+                <p>
+                    <h2> OR Contact Me Here</h2>
+                    <h2 style={{ textDecoration: "underline" }}>
+                        {" "}
+                        Jyot Sarup Kaur
+                    </h2>
+                </p>
+
+                <div className="socialMediaWrapper">
+                    <div className="logoImgDiv">
+                        <img className="logoImg" src={emailLogo} />
+                    </div>
+                    <h4 className="contactDetail">jyotsarup93@gmail.com</h4>
+                    <div className="logoImgDiv">
+                        <img className="logoImg" src={linkedInLogo} />
+                    </div>
+                    <h4 className="contactDetail">
+                        {" "}
+                        <a href="https://www.linkedin.com/in/jyotsarupkaur/">
+                            linkedin.com/in/jyotsarupkaur/
+                        </a>
+                    </h4>
+                    <div className="logoImgDiv">
+                        <img className="logoImg" src={gitHubLogo} />
+                    </div>
+                    <h4 className="contactDetail">
+                        {" "}
+                        <a href="https://github.com/jyotSarup">
+                            https://github.com/jyotSarup
+                        </a>
+                    </h4>
+                </div>
+            </div>
             </div>
         </div>
     );

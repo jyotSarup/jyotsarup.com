@@ -93,7 +93,15 @@ function Skills() {
                 </div>
                 <div id="division3" className="division fromLeft"></div>
                 <div className="other tools rightSide">
-                  
+                <h2 className="toolsHeading">Other Tools</h2>
+                    <img
+                        className="logoImages"
+                        src={logoImages(`./github-logo.png`)}
+                    />
+                    <img
+                        className="logoImages"
+                        src={logoImages(`./SoapUI-logo.png`)}
+                    />
                 </div>
             </div>
         </div>
