@@ -72,11 +72,7 @@ function ContactMe() {
     }
     return (
         <div className="contactMeWrapper">
-            {/* <ClipLoader
-          size={150}
-          color={"#123abc"}
-          loading={isLoading}
-        /> */}
+        
             <h1>Lets Connect!</h1>
             <p className="contactmeStatement">
                 So, That was all about me and I would love to hear about you and
