@@ -88,6 +88,7 @@ function Nav() {
                                     className="navListItemLink"
                                     to="projects"
                                     spy={true}
+                                    offset={-50}
                                     smooth={true}
                                     duration={500}
                                 >

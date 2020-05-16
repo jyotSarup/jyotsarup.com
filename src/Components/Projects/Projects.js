@@ -2,8 +2,27 @@ import React, { useState, useRef, useEffect } from "react";
 import "../../App.css";
 import "./projects.scss";
 import ProjectDetails from "./ProjectDetails";
+import AwesomeSlider from "react-awesome-slider";
+import withAutoplay from "react-awesome-slider/dist/autoplay";
+import "react-awesome-slider/dist/styles.css";
+import "react-awesome-slider/dist/custom-animations/cube-animation.css";
+import { useMediaQuery } from "react-responsive";
+// import Carousel from "react-material-ui-carousel";
+// import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+// import { Carousel } from 'react-responsive-carousel';
+// import Carousel from "nuka-carousel";
+import Carousel from "react-bootstrap/Carousel";
+// import Carousel from '@bit/react-bootstrap.react-bootstrap.carousel'
+// import ReactBootstrapStyle from '@bit/react-bootstrap.react-bootstrap.internal.style-links';
+import Slider from "react-slick";
+import { Slide } from "pure-react-carousel";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+const AutoplaySlider = withAutoplay(AwesomeSlider);
 
 function Projects() {
+    const isTabletOrMobile = useMediaQuery({ query: "(max-width: 800px)" });
     const projects = [
         {
             id: 1,
@@ -38,12 +57,114 @@ function Projects() {
             projectLink: "http://dishlist.wmdd.ca/",
         },
     ];
+    var settings = {
+        dots: true,
+        // appendArrows: "projectDetailsWrapper",
+        adaptiveHeight: false,
+        arrows: true,
+        infinite: true,
+        speed: 2000,
+        autoplay: true,
+        accessibility:true,
+
+        // centerPadding:'20px',
+        cssEase: "ease",
+        pauseOnHover: true,
+    };
     return (
         <div>
             <div className="ProjectsWrapper">
+                
+           
+           
+                {/* {!isTabletOrMobile && (
+                    <AutoplaySlider
+                    animation="cubeAnimation"
+                    // play={true}
+                    cancelOnInteraction={true} // should stop playing on user interaction
+                    interval={6000}
+                    // fillParent={true}
+                >
+                    {projects.map((project) => (
+                        <div style={{margin:"0", padding:"0", height:"100vh"}}>
+                            <ProjectDetails
+                                key={project.id}
+                                projects={project}
+                            />
+                        </div>
+                    ))}
+                </AutoplaySlider>
+                )}
+                
+                
+                    {isTabletOrMobile && projects.map((project) => (
+                        <div style={{margin:"0", padding:"0"}}>
+                            <ProjectDetails
+                                key={project.id}
+                                projects={project}
+                            />
+                        </div>
+                    ))} */}
+
+                {/* <CarouselProvider
+                    naturalSlideWidth={100}
+                    naturalSlideHeight={125}
+                    totalSlides={projects.length}
+                >
+                    <Slider>
+                        {projects.map((project, index) => (
+                            <Slide index={index}>
+                                <div style={{ margin: "0", padding: "0" }}>
+                                    <ProjectDetails
+                                        key={project.id}
+                                        projects={project}
+                                    />
+                                </div>
+                            </Slide>
+                        ))}
+                    </Slider>
+                    <ButtonBack>Back</ButtonBack>
+        <ButtonNext>Next</ButtonNext>
+                </CarouselProvider> */}
+                {/* <Carousel style showArrows={true}>
+                    {projects.map((project) => (
+                        // <div style={{ margin: "0", padding: "0" }}>
+                        <ProjectDetails key={project.id} projects={project} />
+                        // </div>
+                    ))}
+                </Carousel> */}
+                {/* <Carousel
+                    autoplay = {true}
+                    autoplayInterval={5000}
+                    autoplayReverse={true}
+                    heightMode="max"
+
+                >
                 {projects.map((project) => (
-                    <ProjectDetails key={project.id} projects={project} />
-                ))}
+                        <div style={{ margin: "0", padding: "0" }}>
+                        <ProjectDetails key={project.id} projects={project} />
+                         </div>
+                    ))}
+                </Carousel> */}
+
+                {/* <Carousel>
+                {projects.map((project) => (
+                        <Carousel.Item>
+                            <Carousel.Caption>
+                        <ProjectDetails key={project.id} projects={project} />
+                        </Carousel.Caption>
+                        </Carousel.Item>
+                    ))}
+                </Carousel> */}
+                {/* <Slider {...settings}>
+                    <ProjectDetails projects = {projects[0]}/>
+                    <ProjectDetails projects = {projects[1]}/>
+                </Slider> */}
+                <Slider {...settings}>
+                    {projects.map((project) => (
+                        <ProjectDetails key={project.id} projects={project} />
+                    ))}
+                </Slider>
             </div>
         </div>
     );

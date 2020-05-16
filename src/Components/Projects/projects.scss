@@ -1,20 +1,53 @@
 @import "../../scss_variables/variables";
+
+
+.slick-prev:before, .slick-next:before { 
+    color: $primary_clr !important;
+}
+
+.slick-prev:before {
+    position: relative;
+    left: 2em;
+}
+
+.slick-next:before{
+    position: relative;
+    right:3em;
+    font-size: 0 !important;
+    @media screen and (min-width:600px) {
+        font-size: 30px !important;
+    }
+}
 .ProjectsWrapper {
-    width: 100%;
+    background-color: black;
+    margin-top: 3em;
+    width: 95%;
+    margin: auto;
     height: 100%;
     position: relative;
-    background-color: $primary_clr;
+    background:none;
 }
+
+// .ProjectsWrapper:after { 
+//     content: " "; 
+//     display: block;
+//     clear: both;
+// } 
 .projectDetailsWrapper {
     width: 100%;
+    margin: auto;
     height: 100%;
     color: white;
     display: flex;
     flex-direction: column;
     align-content: center;
-    margin-bottom: 2em;
+    
     padding-bottom: 2em;
     padding-top: 3em;
+
+    @media screen and (min-width :800px) {
+        
+    }
 }
 .projectDescription{
   color:black
@@ -26,7 +59,7 @@
 }
 .screenShotsWrapper {
     height: auto;
-    width: 80%;
+    width: 70%;
     color: white;
     background-color: white;
     margin: 1em auto 1em auto;
@@ -34,12 +67,12 @@
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
     padding: 0;
     @media screen and (min-width: 800px) {
-        width: 50%;
+        width: 35%;
     }
 }
 
 .screenshots {
-    padding: 5% 0 5% 0;
+    padding: 3% 0 3% 0;
     width: 100%;
     max-width: 100%;
     display: flex;

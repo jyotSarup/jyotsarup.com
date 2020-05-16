@@ -7,23 +7,15 @@ function ProjectDetails(props) {
     const screenshots = props.projects.screenshots;
     console.log(props);
     return (
-        <div>
-            <div
-                style={{ background: `${props.projects.bgColor}` }}
-                className="projectDetailsWrapper"
-            >
-                {props.projects.id == 1 ? (
-                    <h1 style={{ color: "#07072b" }}>
-                        Projects I have worked on
-                    </h1>
-                ) : (
-                    ""
-                )}
+        <div style={{ background: `${props.projects.bgColor}` }}
+        className="projectDetailsWrapper">
+            <h2 style={{marginBottom:"0",paddingBottom:"1em",color:"black"}}>Projects I have worked on</h2>
                 <h2
                     style={{
                         color: "#07072b",
                         marginBottom: "0",
                         paddingBottom: "0",
+                        textDecoration:"underline"
                     }}
                     className="projectHeading"
                 >
@@ -61,7 +53,7 @@ function ProjectDetails(props) {
                     <a href={props.projects.gitHub}>View on Github</a>
                 </div>
             </div>
-        </div>
+        
     );
 }
 
